@@ -1,0 +1,12 @@
+<template>
+    <!-- Create a component that returns how many years
+         you need to work for retirement(Retirement age is 65)
+Get user age from user using handler
+Using get method calculate how many years need to work
+Return result! -->
+
+<lightning-card title="Retirement Age">
+<lightning-input label="Age" onchange={handleAge}></lightning-input>
+<strong><h1>{findRetirementAge}</h1></strong>
+</lightning-card>  
+</template>

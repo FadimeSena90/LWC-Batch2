@@ -1,0 +1,18 @@
+<template>
+<!-- Create language and days properties
+Using get method return 
+JAVACRIPT lecture will be covered in 5 days.
+ -->
+<lightning-card title="Get method">
+    <lightning-input label="Language" 
+    onchange={handleLanguage}>
+    </lightning-input>
+
+    <lightning-input label="days" 
+    onchange={handleDays}>
+    </lightning-input>
+
+    <p>{createSentence}</p>
+</lightning-card>
+    
+</template>

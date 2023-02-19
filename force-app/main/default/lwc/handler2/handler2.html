@@ -1,0 +1,41 @@
+<template>
+    <h1> My name is Sena</h1>
+    <p>Just to see p tag</p>
+
+<lightning-card title="Handler 2">
+    <lightning-input label="Name" 
+                    onchange={handleName}>
+
+    </lightning-input>
+    <h1>{name}</h1>
+</lightning-card>
+
+
+
+
+
+
+
+
+
+<lightning-card title="Handle3">
+   <label>Country: </label>
+    <input type="text" onclick={handleClick}>
+
+    <p>{country}</p>
+</lightning-card>
+
+<!-- create a card
+and create city property 
+get dynamic city property from user using handler
+and show the new city on ui -->
+
+<lightning-card title="handle4 ">
+<lightning-input label="City" onblur={handleBlur}>
+
+
+</lightning-input>
+<h1>{city}</h1>
+
+</lightning-card>
+</template>
