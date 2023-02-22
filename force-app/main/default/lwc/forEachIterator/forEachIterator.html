@@ -1,0 +1,72 @@
+<template>
+
+
+
+<lightning-button label={xxx} onclick={toggle}>{xxx}</lightning-button>
+
+<h1 if:true={click}>The button is clicked</h1>
+
+
+
+
+    <div class="slds-form-element">
+        <label class="slds-checkbox_toggle slds-grid">
+          <span class="slds-form-element__label slds-m-bottom_none">Toggle Label</span>
+          <input type="checkbox" name="checkbox-toggle-16" value="checkbox-toggle-16" aria-describedby="checkbox-toggle-16" checked="" />
+          <span id="checkbox-toggle-16" class="slds-checkbox_faux_container" aria-live="assertive">
+            <span class="slds-checkbox_faux"></span>
+            <span class="slds-checkbox_on">Enabled</span>
+            <span class="slds-checkbox_off">Disabled</span>
+          </span>
+        </label>
+      </div>
+
+<lightning-card title="learn first and last for iterator">
+    <template iterator:color={colors}>
+        
+        <hr key={color.value} if:true={color.first}>
+        <h1 key={color.value}>{color.value}</h1>
+        <hr key={color.value} if:true={color.last}>
+    </template>
+</lightning-card>
+
+
+
+
+
+
+
+
+
+
+
+<lightning-card title="colors">
+    <template for:each={colors} for:item="eachItem" for:index="eachIndex">
+        <p key={eachItem}>Element: {eachItem}, Index: {eachIndex}</p>    
+    </template>
+</lightning-card>
+
+
+
+
+    <lightning-card title="iterator">
+        <template iterator:it={devices}>
+            <p key={it.value}> {it.value}</p>
+
+        </template>
+    </lightning-card>
+
+    <lightning-card title="for each">
+        <template for:each={devices} for:item="eachDevice">
+                <p key={eachDevice}> {eachDevice} </p>
+
+
+        </template>
+    </lightning-card>
+
+    <lightning-card title="Devices">
+        <p>{devices}</p>
+    </lightning-card>
+  
+    
+</template>

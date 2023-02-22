@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="candidates Array">
+
+            <template for:each={candidates} for:item="eachCandidate">
+                <hr key={eachCandidate}>
+               
+                    <ul key={eachCandidate}>
+                            <li>{eachCandidate.candName}</li>
+                            <li>{eachCandidate.country}</li>
+                            <li>{eachCandidate.skills}</li>
+                            <li>{eachCandidate.experience}</li> 
+                            <img src={eachCandidate.imgURL} >
+
+                    </ul>
+            </template>
+
+    </lightning-card>
+    
+</template>

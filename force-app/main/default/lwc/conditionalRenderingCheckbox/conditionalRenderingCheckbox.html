@@ -1,0 +1,13 @@
+<template>
+
+    <lightning-input type="checkbox" label="Password" onclick={handleClick}>Password</lightning-input>
+
+    <template if:true={check}>
+        <p>Hide password</p>
+        <p>{password}</p>
+    </template>
+    <template if:false={check}>
+        <p>Show password</p>
+    </template>
+    <!-- false, '',null, undefined,0 -->
+</template>
