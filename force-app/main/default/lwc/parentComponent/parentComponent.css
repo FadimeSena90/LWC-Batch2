@@ -1,0 +1,25 @@
+/* h1{
+    color: blueviolet;
+} */
+h2{
+    color:darkgoldenrod;
+}
+.h1-my-class{
+    background-color: antiquewhite;
+}
+c-child-component{
+    color: rgb(131, 236, 26);
+    --custom-p-align-text:right;
+    --custom-bg-color:yellow;
+    --custom-text-color-p:rgb(104, 7, 96);
+}
+.class-for-parent{
+    --slds-c-input-text-color: rgb(241, 130, 18);
+    --slds-c-input-color-background:rgba(230, 241, 166, 0.53);
+    --slds-c-input-spacing-horizontal-end: 1rem;
+}
+
+.class-for-badge{
+    --slds-c-badge-color-background:green;
+    --slds-c-badge-text-color: white;
+}

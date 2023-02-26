@@ -1,0 +1,11 @@
+div{
+    color: antiquewhite;
+    background-color: brown;
+    text-align: right;
+
+}
+p{
+    text-align: var(--custom-p-align-text, center);
+    background-color: var(--custom-bg-color, azure);
+    color:var(--custom-text-color-p, chocolate);
+}
