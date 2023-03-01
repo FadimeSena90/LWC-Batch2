@@ -1,0 +1,15 @@
+<template>
+<lightning-card title="example slot" style="--slds-c-card-color-background:rgb(255, 221, 0);">
+    <lightning-input label="singer" onchange={handleSinger}>
+
+    </lightning-input>
+    <lightning-input label="type of song" onchange={handleChange} >
+        
+    </lightning-input>
+    <c-slot-child-example>
+        <h1 slot="singer">Singer: {singer}</h1>
+        <h1 slot="typeOfSong">Type: {typeSong}</h1>
+    </c-slot-child-example>
+     
+</lightning-card>
+</template>

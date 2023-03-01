@@ -1,0 +1,7 @@
+.card{
+    --slds-c-card-color-background:rgb(198, 251, 207);
+}
+c-slot-child-component div{
+    background-color: coral;
+
+}
