@@ -1,0 +1,19 @@
+<template>
+    <c-decorators-child-component singer-name="Beyonce">
+
+    </c-decorators-child-component>
+
+
+    <lightning-card title="track decorator">
+        <lightning-input type="text" label="song" onkeyup={handleSong}></lightning-input>
+        <h1>{song}</h1>
+    </lightning-card>
+
+    <lightning-card title="track for non primitive data">
+
+            <lightning-input type="text" onchange={handleCountry} placeholder="Enter your country">
+            </lightning-input>
+<h1>{address.country}</h1>
+           
+    </lightning-card>
+</template>

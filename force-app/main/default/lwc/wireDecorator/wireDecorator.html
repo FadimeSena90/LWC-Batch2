@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="wire decorator">
+    <template for:each={accs.data} for:item="eachAcc">
+<p key={eachAcc.id}>{eachAcc.Name}</p>
+
+    </template>
+</lightning-card>
+</template>
