@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="wire contact records filtering">
+    <lightning-input type="text" label="Contact Name"
+     onchange={handleFilter}>
+    </lightning-input>
+<template for:each={contacts.data} for:item="eachContact">
+    <p key={eachContact.id}>{eachContact.Name}</p>
+</template>
+
+
+</lightning-card>
+</template>

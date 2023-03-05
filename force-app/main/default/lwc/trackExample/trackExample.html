@@ -1,0 +1,10 @@
+<template>
+<!-- <template for:each={candidates} for:item="eachcandi">
+    <p key={eachcandi.id}>{eachcandi.name}</p>
+</template> -->
+    <template iterator:it={candidates}>
+        <p key={it.value.id}>{it.value.name}</p>
+    </template>
+  <lightning-input type="text" label="Name" onblur={handleName}>
+  </lightning-input>
+</template>
