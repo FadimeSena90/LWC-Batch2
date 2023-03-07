@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="child to parent">
+    <c-component-communication-child onbuttonclick={handleButtonClick1}>
+
+    </c-component-communication-child>
+    <h1>{greeting}</h1>
+
+    <hr>
+    <c-component-communication-child2 onnamecustom={handleButtonClick2}>
+    </c-component-communication-child2>
+    <h1>{newName}</h1>
+
+    <hr>
+    <c-component-communication-child3 onchild3={handleButtonClick3}>
+    </c-component-communication-child3>
+
+    <hr>
+    <!-- in this line we called our child component 
+    onchild4 is the  custom event that we created
+which is calling handleButtonCLick4 handler -->
+    <c-component-communication-child4 onchild4={handleButtonClick4}>
+    </c-component-communication-child4>
+    
+</lightning-card>
+</template>
