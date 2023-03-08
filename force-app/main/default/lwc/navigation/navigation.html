@@ -1,0 +1,40 @@
+<template>
+<lightning-card title="tile format">
+
+    <div class="demo-only" style="width:30rem">
+        <article class="slds-tile slds-media">
+        <div class="slds-media__figure">
+        <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+        <img alt="" src="/assets/images/avatar2.jpg" title="Lexee L. Jackson avatar" />
+        </span>
+        </div>
+        <div class="slds-media__body">
+        <h3 class="slds-tile__title slds-truncate" title="Lexee L. Jackson">
+        <a href="#">Lexee L. Jackson</a>
+        </h3>
+        <div class="slds-tile__detail">
+        <dl class="slds-list_horizontal slds-wrap">
+        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+        </dl>
+        </div>
+        </div>
+        </article>
+        </div>
+
+</lightning-card>
+
+<lightning-card title="navigate to another page">
+    <lightning-button label="Web page" onclick={handleWebPage}>
+    </lightning-button>
+
+    <br>
+    <lightning-button label="Account page" onclick={handleAccPage}>
+    </lightning-button>
+    <br>
+    <lightning-button label="Account Record Pages" onclick={handleAccRecords}>
+    </lightning-button>
+</lightning-card>   
+</template>
