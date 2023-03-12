@@ -1,0 +1,40 @@
+<template>
+
+    <lightning-card  variant="Narrow"  title="Closed Converted Leads" icon-name="standard:account">
+
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered" 
+        aria-labelledby="element-with-table-label other-element-with-table-label">
+            <thead class="slds-line-height_reset">
+                <th>Last Name</th>
+                <th>Company</th>
+                <th>Status</th>
+            </thead>
+        <template for:each={leads.data} for:item="alead">
+           
+                <tr key={alead.id} class="slds-hint-parent">
+                    <td class="slds-truncate">{alead.LastName}</td>
+                    <td class="slds-truncate">{alead.Company}</td>
+                    <td class="slds-truncate">{alead.Status}</td>
+                </tr>
+        </template>
+</table>
+    </lightning-card>    
+</template>
+
+
+
+
+        <!-- <lightning-input type="text" label="LastName" 
+        onchange={handleLastName}></lightning-input>
+
+        <lightning-input type="text" label="Company" 
+        onchange={handleComp}></lightning-input>
+
+        <lightning-input type="text" label="Status" 
+        onchange={handleStatus}></lightning-input>
+
+<h1>result</h1>
+<! <lightning-button onclick={handleLeadCreation}> 
+
+</lightning-button> -->
+  

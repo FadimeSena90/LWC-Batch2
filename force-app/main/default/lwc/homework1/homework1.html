@@ -1,0 +1,21 @@
+<template>
+
+
+    <lightning-card title="Homework 1">
+            <lightning-input label='Street' type="text" placeholder="Enter street" onchange={handleAddressStreet}>
+            </lightning-input>
+
+            <lightning-input label='Country' type="text" placeholder="Enter country" onchange={handleAddressCountry}>
+            </lightning-input>
+
+            <lightning-input label='postalCode' type="text" placeholder="Enter postal code" onchange={handleAddressPostalCode}>
+            </lightning-input>
+
+            <lightning-input label='State' type="text" placeholder="Enter state" onchange={handleAddressState}>
+            </lightning-input>
+
+
+            <h1>{fullAddress}</h1>
+    </lightning-card>
+    
+</template>

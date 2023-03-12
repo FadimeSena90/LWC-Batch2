@@ -19,10 +19,9 @@ days=5
 
         return `${this.language.toUpperCase()} lecture will be covered in ${this.days} days`
     }
-get methodName(){
-    return something
-}
 
-
+// get methodName(){
+//     return something
+// }
 
 }

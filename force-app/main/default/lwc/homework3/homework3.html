@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        
+       <lightning-input type="text" onblur={handleStdName}></lightning-input>
+       
+        <template for:each={students} for:item="each">
+            <h1 key={each}>{each.id}</h1>
+            <h1 key={each}>{each.name}</h1>
+        </template>
+    </lightning-card>
+    
+</template>
